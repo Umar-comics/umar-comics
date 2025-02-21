@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Our Comics</title>
+<link type="text/css" rel="stylesheet" href="css/my-first-stylesheet.css"/>
+</head>
+<body>
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="our-comics.html">Our Comics</a></li>
+<li class="selected">Find Us!</li>
+</ul>
+<h1>Our Comics</h1>
+</nav>
+<br>
+	<p>These are our comics.</p>
+<ul>
+	<li>Shrink Ray</li>
+	<li>Burj Khalifa</li>
+	<li>Random Tool: Book 1</li>
+	<li>Soul Hunters: Book 1; Wrath of the Soul Eaters</li>
+	<li>Stickman: In An Another Dimension</li>
+</ul>
+<p>
+	Here's images of our comics. Click
+	the button to change it.
+</p>
+<br>
+<p>
+<img class="medium" id="display-image" onclick="swapImage()" src="images/shrinkray.pdf" width="180" height="180"/>
+</p>
+<p>
+<button class="button" id="myButton">Change Image</button>
+</p>
+<p>Click the button to change it.</p>
+
+<script>
+
+function swapImage1() {
+var imageDisplayed = document.getElementById('display-image');
+if (imageDisplayed.src.match("images/shrinkray.pdf")) {
+imageDisplayed.src = "images/burjkhalifa.pdf";
+}
+else {
+imageDisplayed.src = "images/randomtool1.pdf";
+}
+  console.log("Function 1 executed");
+}
+
+function swapImage2() {
+var imageDisplayed = document.getElementById('display-image');
+if (imageDisplayed.src.match("images/randomtool1.pdf")) {
+imageDisplayed.src = "images/soulhunters1.png";
+}
+else {
+imageDisplayed.src = "images/stickman1.pdf";
+}
+  console.log("Function 2 executed");
+}
+
+const button = document.getElementById("myButton");
+
+button.addEventListener("click", function() {
+  for (let i = 0; i < 100000000000000000; i++) { // Loop 100000000000000000 times
+    swapImage1();
+    swapImage2();
+  }
+});
+
+</script>
+
+</body>
+</html>

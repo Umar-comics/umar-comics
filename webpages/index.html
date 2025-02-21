@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home</title>
+    <link type="text/css" rel="stylesheet" href="css/my-first-stylesheet.css"/>
+  </head>
+  <body class="home">
+    <header>
+      <p class="logo">
+        <sup>the</sup>comic club
+      </p>
+      <h1>Home</h1>
+      <nav>
+        <ul>
+          <li class="selected">Home</li>
+          <li>
+            <a href="our-comics.html">Our Comics</a>
+          </li>
+          <li>
+            <a href="find-us.html">Find Us!</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <article>
+      <h1>Meet the Comic Club.</h1>
+      <p>We are Friends Inc., sand we are the comic club!</p>
+      <p>Come check out our website!</p>
+      <section>
+        <h1>Our Latest Comics</h1>
+        <br>
+        <h2>Shrink Ray</h2>
+        <p>
+          <img class="small" src="images/shrinkray.pdf" 
+            alt="Picture of Shrink Ray Comic"/>
+        </p>
+        <p><em>IN 2046, A MAD SCIENTIST MADE A SHRINK RAY...
+          AND HE NEEDED A TEST SUBJECT...</em></p>
+        <p>
+          Shrink Ray is packed with sci-fi tech and fun.
+        </p>
+        <p>Go to <strong>Find Us!</strong> to read the whole book!</p>
+      </section>
+      <section>
+        <h2>Burj Khalifa</h2>
+        <p>
+          <img class="small" src="images/burjkhalifa.pdf" alt="Picture of Burj Khalifa Comic"/>
+        </p>
+          <p>Burj Khalifa is packed from end to end with action.</p>
+          <p>Again, go to <strong>Find Us! </strong>to read the whole book!</p>
+      </section>
+      <section>
+        <h2>Random Tool</h2>
+        <p>
+          <img class="small" src="images/randomtool1.pdf" alt="Picture of Random Tools Comic"/>
+          </p>
+            <p>
+              Random Tool is packed with action, adventure, 
+              suspense, and drama.
+          </p>
+      </section>
+      <section>
+        <h2>Soul Hunters: Book 1; Wrath of the Soul Eaters</h2>
+        <p>
+          <img class="small" src="images/soulhunters1.png" alt="Picture of Soul Hunturs Comic"/>
+        </p>
+          <p>
+            <em>SOUL HUNTERS HUNT EVIL SOULS...WILL THE SOULS WIN...OR THE HUNTERS?</em>
+          </p>
+          <p>
+            Soul Hunters is packed with suspense and drama.
+        </p>
+        <p>Go to <strong>Find Us!</strong> to read the whole book!</p>
+        </section>
+        <section>
+          <h2>Stickman: In An Another Dimension</h2>
+          <p>
+                <img class="small" src="images/stickman1.png" alt="Picture of Stickman Comic"/>
+          </p>
+          <p>
+            HOW DID THEY GET IN ANOTHER DIMENSION...AND HOW WOULD THEY GET BACK...AND WHO IS CREATING THE RIFTS?
+            </p>
+          <p>
+            Stickman is packed with mystery and drama.
+            </p>
+        </section>
+    </article>
+      <aside>
+        <section>
+          <h2>Our Next Sale</h2>
+          <h3>Get our comics!</h3>
+            <p>Wanna get our comics? Then come to our next big sale on <strong>Friday, Feb. 28</strong>! All of the comics will on sale! Directions and costs will be on <strong>Find Us!</strong>So go there to get our comics! </p>
+            <h4>Comics being Sold</h4>
+            <ul>
+              <li>Shrink Ray</li>
+              <li>Soul Hunters: Book 1; Wrath of the Soul Eaters</li>
+              <li>Burj Khalifa</li>
+              <li>Random Tool: Book 1</li>
+              <li>Stickman: In An Another Dimension</li>
+            </ul>
+            <h4>Images of Comics</h4>
+            <p>
+<img class="medium" id="display-image" onclick="swapImage()" src="images/shrinkray.pdf" width="180" height="180"/>
+</p>
+<p>
+<button class="button" id="myButton">Change Image</button>
+</p>
+<p>Click the button to change it.</p>
+
+<script>
+
+function swapImage1() {
+var imageDisplayed = document.getElementById('display-image');
+if (imageDisplayed.src.match("images/shrinkray.pdf")) {
+imageDisplayed.src = "images/burjkhalifa.pdf";
+}
+else {
+imageDisplayed.src = "images/randomtool1.pdf";
+}
+  console.log("Function 1 executed");
+}
+
+function swapImage2() {
+var imageDisplayed = document.getElementById('display-image');
+if (imageDisplayed.src.match("images/randomtool1.pdf")) {
+imageDisplayed.src = "images/soulhunters1.png";
+}
+else {
+imageDisplayed.src = "images/stickman1.pdf";
+}
+  console.log("Function 2 executed");
+}
+
+const button = document.getElementById("myButton");
+
+button.addEventListener("click", function() {
+  for (let i = 0; i < 100000000000000000; i++) { // Loop 100000000000000000 times
+    swapImage1();
+    swapImage2();
+  }
+});
+
+</script>
+
+        <p><strong><em>At 266 W 1850 N, Logan, UT 84341. On that street.</em></strong></p>
+        </section>
+        <section>
+          <h2></h2>
+          <h3></h3>
+            <p></p>
+            <p></p>
+            <p></p>
+        </section>
+        <section>
+          <h2></h2>
+          <p></p>
+          <p></p>
+        <p>
+       </p>
+      </section>
+    </aside>
+    <footer>
+      <p class="copyright">All information copyright © Friends Inc. Comic Club.</p>
+        <p class="contact">Contact us at +1 (435) 938-8589.
+      </p>
+    </footer>
+  </body>
+</html>
