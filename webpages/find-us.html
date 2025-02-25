@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Find Us!</title>
+<style>
+/* Global html background for all pages */
+html {
+  background: radial-gradient(circle, #1FD655, 50%, #D1FFBD 50%, #1FD655);
+  background-size: 8px 8px;
+  box-sizing: border-box;
+}
+
+/* Apply box-sizing for consistency */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  background-color: #E60000;
+  border: 2px solid #000000;
+  border-radius: 16px;
+  font-family: sans-serif;
+  margin: 0 auto;
+  max-width: 1024px;
+  min-width: 256px;
+  padding: 8px 24px 24px;
+}
+
+/* Logo content before */
+p.logo::before {
+  content: "the comic club";
+  color: #FFD700;
+  font-weight: bold;
+}
+
+/* Button styles */
+button.button {
+  background-color: #FCAB68;
+  font-family: sans-serif;
+  border: 4px solid #000000;
+  padding: 8px 8px;
+}
+
+button.button::before {
+  color: #fff;
+}
+
+/* Image sizes */
+img.small {
+  float: left;
+  height: 200px;
+  margin-bottom: 24px;
+  margin-right: 24px;
+}
+
+img.medium {
+  max-width: 360px;
+  width: 50%;
+}
+
+img.large {
+  width: 100%;
+}
+
+/* Menu styles */
+nav ul {
+  list-style-type: none;
+  background-color: #FCAB68;
+  border: 4px solid #111111;
+  border-radius: 10px;
+  font-family: sans-serif;
+  font-weight: bold;
+  padding: 16px;
+}
+
+nav ul li {
+  display: inline;
+  border-right: 2px solid #111111;
+  padding-right: 8px;
+  padding-left: 8px;
+}
+
+nav ul li:last-child {
+  border-right: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #111111;
+  padding: 8px;
+}
+
+nav li.selected {
+  color: #0000CC;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* credits */
+
+footer ul.credits {
+  list-style-type: none;
+}
+
+/* Table styles */
+table {
+  font-size: 70%;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #000000;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #FCAB68;
+}
+
+td {
+  background-color: #E60000;
+}
+
+/* Index page specific styles */
+body.home {
+  background-color: #FFFFFF;
+}
+
+/* Header styles */
+header {
+  background-color: #F45556;
+}
+
+header p {
+  float: left;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+header h1 {
+  font-size: 16px;
+  text-align: right;
+}
+
+/* Comic overviews */
+section {
+  background-color: #88BB75;
+  margin-bottom: 24px;
+  min-height: 320px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+/* Aside styles */
+aside {
+  background-color: #1EADDF;
+}
+
+/* Footer styles */
+footer {
+  background-color: #BA99C0;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+footer p {
+  margin-top: 0;
+}
+
+footer p.contact {
+  text-align: right;
+}
+
+/* Clear floats for footer */
+footer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Media query for larger screens */
+@media all and (min-width: 900px) {
+  article {
+    float: left;
+    width: 66%;
+  }
+
+  aside {
+    float: left;
+    padding-left: 24px;
+    width: 34%;
+  }
+
+  footer {
+    clear: both;
+  }
+}
+
+/* Media query for smaller screens (added for responsiveness) */
+@media all and (max-width: 600px) {
+  body {
+    padding: 8px;
+    max-width: 100%;
+  }
+
+  article, aside {
+    width: 100%;
+    float: none;
+  }
+}
+</style>
+</head>
+<body>
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="our-comics.html">Our Comics</a></li>
+<li class="selected">Find Us!</li>
+</ul>
+</nav>
+<h1>Find Us!</h1>
+<br>
+<iframe src="https://maps.app.goo.gl/XrLq1JaXkQWWMab97?g_st=com.google.maps.preview.copy" width= "600" height="450" frameborder="0" style="border:0" allowfullscreen>
+</iframe>
+<p><img src="images/locaton.png" alt="Selling Location"/></p>
+<p>On that street at 6 PM. We'll be selling comics!</p>
+<h2>Costs</h2>
+<table>
+<tr>
+<th>Comics</th><th>Cost</th
+</tr>
+<tr>
+<td>Shrink Ray</td><td>$0.90</td>
+</tr>
+<tr>
+<td>Random Tool</td><td>$0.90</td>
+</tr>
+<tr>
+<td>Burj Khalifa Part #1</td><td>$0.50</td>
+</tr>
+<tr>
+<td>Burj Khalifa Part #2</td><td>$0.40</td>
+</tr>
+<tr>
+<td>Soul Hunters: Book 1; Wrath of the Soul Eaters</td><td>$1.10</td>
+</tr>
+<tr>
+<td>Stickman: In Another Dimension</td><td>$2.00</td>
+</tr>
+</table>
+<p>
+	We only accept cash and coins.
+</p>
+</body>
+</html>
